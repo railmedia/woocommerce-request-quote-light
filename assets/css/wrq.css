@@ -1,0 +1,69 @@
+.wrq-form {
+    display: none;
+}
+.wrq-form-overlay {
+    background:rgba(0, 0, 0, .5);
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:1005;
+}
+.wrq-form-panel {
+    position:absolute;
+    z-index:1000;
+    width:70%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top:30%;
+    text-align: center;
+    line-height: 35px;
+    font-family:'Lato Regular', Arial, Verdana, sans-serif;
+    border-radius:2px;
+    box-shadow:0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+    background:#fff;
+    padding:10px;
+}
+.wrq-form-panel .wrq-form-panel-inner {
+    padding:20px;
+}
+
+.wrq_close_trigger {
+	position: absolute;
+	right: 0;
+	top: 0;
+    cursor:pointer;
+    width:30px;
+    height:30px;
+}
+.wrq_close_trigger:hover {
+    background:#fff;
+    color:#9f1d21;
+}
+.wrq-loader {
+    border: 5px solid #a2a2a2;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display:none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.wrq-preloader {
+    text-align:center;
+}
+
+.wrq-success-msg {
+    color:green;
+    font-weight:bold;
+    text-align:center;
+}
